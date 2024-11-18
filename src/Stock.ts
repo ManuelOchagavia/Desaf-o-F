@@ -1,11 +1,9 @@
-type Currency = 'USD' | 'CLP' 
-
 type Prices = {
   [dateIso: string]: number
 }
 
 export class Stock {
-  constructor (protected prices: Prices, private currency: Currency, public quantity: number) {}
+  constructor (protected prices: Prices, public quantity: number) {}
 
   /**
    * Returns the price of the stock on a given date.

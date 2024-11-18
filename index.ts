@@ -14,8 +14,8 @@ const pricesStock2 = {
   '2024-09-21T00:00:00.000Z': 691,
 };
 
-const stock1 = new Stock(pricesStock1, 'USD', 34);
-const stock2 = new Stock(pricesStock2, 'USD', 19);
+const stock1 = new Stock(pricesStock1, 34);
+const stock2 = new Stock(pricesStock2, 19);
 
 const porfolio = new Portfolio([stock1, stock2])
 
